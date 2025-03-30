@@ -18,13 +18,13 @@ const NavLink = ({ href, className, children }: NavLinkProps) => {
     <Link
       href={href}
       className={cn(
-        "text-sm text-gray-600 hover:text-rose-500 transition-colors duration-200",
+        "text-sm text-gray-600 transition-colors duration-200 hover:text-rose-500",
         className,
         {
           "text-rose-500":
             pathname === href ||
             (pathname !== href && href.startsWith(pathname + "#")),
-        }
+        },
       )}
     >
       {children}

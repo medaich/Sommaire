@@ -5,39 +5,38 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto z-0 flex flex-col items-center py-16 sm:py-20 animate-in transition-all max-w-7xl lg:px-12">
-      <div className="relative bg-linear-to-r from-rose-200 via-rose-500 to-rose-800 animate-gradient-x rounded-full p-[1px] group">
+    <section className="animate-in relative z-0 mx-auto flex max-w-7xl flex-col items-center py-16 transition-all sm:py-20 lg:px-12">
+      <div className="animate-gradient-x group relative rounded-full bg-linear-to-r from-rose-200 via-rose-500 to-rose-800 p-[1px]">
         <Badge
           variant="secondary"
-          className="rounded-full px-6 py-2 text-base bg-white group-hover:bg-gray-50/50 transition-colors duration-200"
+          className="rounded-full bg-white px-6 py-2 text-base transition-colors duration-200 group-hover:bg-gray-50/50"
         >
-          <Sparkles className="!size-8 text-rose-600 animate-pulse mr-2 " />
+          <Sparkles className="mr-2 !size-8 animate-pulse text-rose-600" />
           <p className="text-rose-600">Powered by AI</p>
         </Badge>
       </div>
 
-      <h1 className="text-center py-6">
+      <h1 className="py-6 text-center">
         Transform PDFs into{" "}
         <span className="relative px-2">
           concise
           <span
-            className="inline-block bg-rose-100 rounded-lg -rotate-2
-            absolute inset-0 -z-10"
+            className="absolute inset-0 -z-10 inline-block -rotate-2 rounded-lg bg-rose-100"
             aria-hidden="true"
           ></span>
         </span>{" "}
         summaries
       </h1>
-      <h2 className="text-lg sm:text-xl lg:text-2xl text-center px-4 lg:px-0 lg:max-w-4xl text-gray-600">
+      <h2 className="px-4 text-center text-lg text-gray-600 sm:text-xl lg:max-w-4xl lg:px-0 lg:text-2xl">
         Get a beautiful summary reel of the document in seconds.
       </h2>
 
       <div>
         <Button
           variant={"link"}
-          className="rounded-full mt-6 text-base sm:text-lg lg:text-xl bg-linear-to-r from-slate-800 to-rose-800 hover:from-rose-800 hover:to-slate-800 transition-colors duration-300 px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-16 hover:no-underline shadow-lg"
+          className="mt-6 rounded-full bg-linear-to-r from-slate-800 to-rose-800 px-8 py-6 text-base shadow-lg transition-colors duration-300 hover:from-rose-800 hover:to-slate-800 hover:no-underline sm:px-10 sm:py-7 sm:text-lg lg:mt-16 lg:px-12 lg:py-8 lg:text-xl"
         >
-          <Link href="#pricing" className="gap-2 flex items-center text-white ">
+          <Link href="#pricing" className="flex items-center gap-2 text-white">
             <span className="font-bold">Try Sommaire</span>
             <ArrowRight className="animate-pulse" />
           </Link>
