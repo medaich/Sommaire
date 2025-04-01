@@ -3,13 +3,13 @@ import Step from "../common/step";
 
 const HowItWorksSection = () => {
   return (
-    <section className="bg-gray-50 p-8 lg:py-24">
+    <section className="bg-gray-50 p-8 px-4 lg:py-24">
       <div className="mx-auto max-w-6xl space-y-16">
         <div className="mx-auto max-w-3xl space-y-4">
           <h2 className="text-center font-bold text-rose-500 uppercase">
             How it works
           </h2>
-          <h3 className="text-center text-3xl font-bold">
+          <h3 className="mx-auto max-w-2xl text-center text-3xl font-bold">
             Transform any PDF into an easy-to-digest summary in three simple
             steps
           </h3>
@@ -21,7 +21,7 @@ const HowItWorksSection = () => {
               key={index}
               title={step.title}
               description={step.description}
-              Icon={step.icon}
+              Icon={step.Icon}
               showArrow={index < steps.length - 1}
             />
           ))}

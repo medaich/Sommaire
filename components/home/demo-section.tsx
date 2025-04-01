@@ -11,7 +11,7 @@ const DemoSection = () => {
               aria-hidden="true"
               className="mx-auto size-10 rounded-2xl border-[.5px] bg-slate-100 p-2 text-rose-500"
             />
-            <h2 className="text-center text-3xl font-bold">
+            <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold">
               Watch how Sommaire transforms{" "}
               <span className="bg-linear-to-r from-rose-500 to-rose-700 bg-clip-text text-transparent">
                 this Next.js course PDF

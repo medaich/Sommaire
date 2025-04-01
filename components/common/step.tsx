@@ -1,9 +1,7 @@
-import { LucideIcon, MoveRight } from "lucide-react";
+import { Step as StepType } from "@/lib/consts";
+import { MoveRight } from "lucide-react";
 
-interface StepProps {
-  title: string;
-  description: string;
-  Icon: LucideIcon;
+interface StepProps extends StepType {
   showArrow?: boolean;
 }
 

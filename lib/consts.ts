@@ -1,20 +1,60 @@
-import { BrainCircuit, FileOutput, FileText } from "lucide-react";
+import { BrainCircuit, FileOutput, FileText, LucideIcon } from "lucide-react";
 
-export const steps = [
+export interface Step {
+  title: string;
+  description: string;
+  Icon: LucideIcon;
+}
+
+export interface PricingTier {
+  label: string;
+  description: string;
+  price: number;
+  advanteges: string[];
+  isRecommended: boolean;
+}
+
+export const steps: Step[] = [
   {
     title: "Upload your PDF",
     description: "Simply drag and drop your PDF document or click to upload",
-    icon: FileText,
+    Icon: FileText,
   },
   {
     title: "AI Analysis",
     description:
       "Our advanced AI processes and analyzes your document instantly",
-    icon: BrainCircuit,
+    Icon: BrainCircuit,
   },
   {
     title: "Get Summary",
     description: "Receive a clear, concise summary of your document",
-    icon: FileOutput,
+    Icon: FileOutput,
+  },
+];
+
+export const pricings: PricingTier[] = [
+  {
+    label: "Basic",
+    description: "Perfect for occasional use",
+    price: 9,
+    advanteges: [
+      "5 PDF summaries per month",
+      "Standard processing speed",
+      "Email support",
+    ],
+    isRecommended: false,
+  },
+  {
+    label: "Pro",
+    description: "For professionals and teams",
+    price: 19,
+    advanteges: [
+      "Unlimitec PDF summaries",
+      "Priority processing",
+      "24/7 priority support",
+      "Markdown export",
+    ],
+    isRecommended: true,
   },
 ];
