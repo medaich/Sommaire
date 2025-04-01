@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { Badge } from "../ui/badge";
-import Link from "next/link";
+import CTAButton from "@/components/common/cta-button";
 
 const HeroSection = () => {
   return (
@@ -32,15 +31,11 @@ const HeroSection = () => {
       </h2>
 
       <div>
-        <Button
-          variant={"link"}
-          className="mt-6 rounded-full bg-linear-to-r from-slate-800 to-rose-800 px-8 py-6 text-base shadow-lg transition-colors duration-300 hover:from-rose-800 hover:to-slate-800 hover:no-underline sm:px-10 sm:py-7 sm:text-lg lg:mt-16 lg:px-12 lg:py-8 lg:text-xl"
-        >
-          <Link href="#pricing" className="flex items-center gap-2 text-white">
-            <span className="font-bold">Try Sommaire</span>
-            <ArrowRight className="animate-pulse" />
-          </Link>
-        </Button>
+        <CTAButton
+          href="#pricing"
+          label="Try Sommaire"
+          className="mt-6 font-bold sm:px-10 sm:py-7 sm:text-lg lg:mt-16 lg:px-12 lg:py-8 lg:text-xl"
+        />
       </div>
     </section>
   );
